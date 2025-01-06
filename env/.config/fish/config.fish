@@ -21,7 +21,9 @@ end
 
 export PATH="$PATH:$HOME/.local/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
-export DEV_ENV_HOME="$HOME/personal/dev-env"
+export DEV_ENV_HOME="$HOME/personal/dev"
 
 set fish_greeting
 set -g fish_autosuggestion_enabled 0
+
+set -x OPEN_API_KEY ""
