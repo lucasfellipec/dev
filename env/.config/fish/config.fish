@@ -26,4 +26,5 @@ export DEV_ENV_HOME="$HOME/personal/dev"
 set fish_greeting
 set -g fish_autosuggestion_enabled 0
 
-set -x OPEN_API_KEY ""
+set -x OPENAI_API_KEY ""
+set -x ANTHROPIC_API_KEY ""
