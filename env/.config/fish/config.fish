@@ -24,7 +24,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export DEV_ENV_HOME="$HOME/personal/dev"
 
 set fish_greeting
-set -g fish_autosuggestion_enabled 0
-
-set -x OPENAI_API_KEY ""
-set -x ANTHROPIC_API_KEY ""
+# set -g fish_autosuggestion_enabled 0
