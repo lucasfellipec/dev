@@ -24,4 +24,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export DEV_ENV_HOME="$HOME/personal/dev"
 
 set fish_greeting
-# set -g fish_autosuggestion_enabled 0
+set -g fish_autosuggestion_enabled 0
+
+for color in (set | grep -Eo '^fish_color_[a-zA-Z0-9_]+')
+    set $color normal
+end

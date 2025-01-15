@@ -4,9 +4,7 @@ background = 000000
 shell-integration-features = no-cursor,no-sudo,title
 shell-integration = fish
 
-font-family = "JetBrains Mono"
-font-size = 16
-
+font-size = 18
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
@@ -19,8 +17,6 @@ confirm-close-surface = false
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
 macos-non-native-fullscreen = true
-
-window-padding-x = 4
 
 window-padding-balance = true
 mouse-hide-while-typing = true
