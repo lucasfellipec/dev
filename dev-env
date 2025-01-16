@@ -59,7 +59,7 @@ update_files $DEV_ENV_HOME/env/.config $XDG_CONFIG_HOME
 update_files $DEV_ENV_HOME/env/.local $HOME/.local
 
 copy $DEV_ENV_HOME/tmux-sessionizer/tmux-sessionizer $HOME/.local/bin/tmux-sessionizer
-copy $DEV_ENV_HOME/env/.config/homebrew/bin/update-brew-packages $HOME/.local/bin/update-brew-packages
+copy $DEV_ENV_HOME/env/.config/homebrew/bin/update_brew_packages $HOME/.local/bin/update_brew_packages
 copy $DEV_ENV_HOME/env/.config/tmux/.tmux.conf $HOME/.tmux.conf
 copy $DEV_ENV_HOME/tmux-sessionizer/tmux-cht $HOME/.local/bin/tmux-cht
 copy $DEV_ENV_HOME/env/.tmux-sessionizer $HOME/.tmux-sessionizer
