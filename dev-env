@@ -65,5 +65,5 @@ copy $DEV_ENV_HOME/tmux-sessionizer/tmux-cht $HOME/.local/bin/tmux-cht
 copy $DEV_ENV_HOME/env/.tmux-sessionizer $HOME/.tmux-sessionizer
 copy $DEV_ENV_HOME/env/.gitconfig $HOME/.gitconfig
 copy $DEV_ENV_HOME/env/.vimrc $HOME/.vimrc
-copy $DEV_ENV_HOME/env/.wezterm.lua $HOME/.wezterm.lua
+# copy $DEV_ENV_HOME/env/.wezterm.lua $HOME/.wezterm.lua
 copy $DEV_ENV_HOME/dev-env $HOME/.local/bin/dev-env

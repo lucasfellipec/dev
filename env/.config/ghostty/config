@@ -7,6 +7,7 @@ shell-integration = fish
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
+font-family = "JetBrains Mono"
 
 cursor-style-blink = false
 cursor-color = e2e1f1
