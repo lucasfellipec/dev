@@ -1,0 +1,57 @@
+# This is a demo config to showcase some of the most important commands.
+# It is meant to be changed and configured, as it is intentionally kept sparse.
+# For a (much) more advanced configuration example see my dotfiles:
+# https://github.com/FelixKratz/dotfiles
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+##### Bar Appearance #####
+# Configuring the general appearance of the bar.
+# These are only some of the options available. For all options see:
+# https://felixkratz.github.io/SketchyBar/config/bar
+# If you are looking for other colors, see the color picker:
+# https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
+
+sketchybar --bar position=bottom height=40 blur_radius=30 color=0x40000000 padding_left=0 padding_right=0
+
+default=(
+  icon.font="DejaVu Sans Mono:Book:13.0"
+  label.font="DejaVu Sans Mono:Book:13.0"
+  icon.color=0xffffffff
+  label.color=0xffffffff
+)
+sketchybar --default "${default[@]}"
+
+SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
+for i in "${!SPACE_ICONS[@]}"
+do
+  sid="$(($i+1))"
+  space=(
+    space="$sid"
+    icon="${SPACE_ICONS[i]}"
+    icon.padding_left=7
+    icon.padding_right=7
+    background.color=0xff285577
+    background.corner_radius=0
+    background.height=25
+    label.drawing=off
+    script="$PLUGIN_DIR/space.sh"
+    click_script="yabai -m space --focus $sid"
+    padding_left=1
+  )
+  sketchybar --add space space."$sid" left --set space."$sid" "${space[@]}"
+done
+
+sketchybar --add item clock right \
+           --set clock update_freq=5 script="$PLUGIN_DIR/clock.sh" \
+           --add item s1 right \
+           --set s1 script="$PLUGIN_DIR/separator.sh" \
+           --add item battery right \
+           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+           --subscribe battery system_woke power_source_change \
+           --add item s2 right \
+           --set s2 script="$PLUGIN_DIR/separator.sh" \
+           --add item disk right \
+           --set disk script="$PLUGIN_DIR/disk.sh"
+
+sketchybar --update
