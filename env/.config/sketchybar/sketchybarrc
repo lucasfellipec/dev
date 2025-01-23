@@ -12,7 +12,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=bottom height=50 color=0x40000000 padding_left=0 padding_right=8
+sketchybar --bar position=bottom height=25 color=0x40000000 padding_left=0 padding_right=8 margin=0 y_offset=0
 
 default=(
   icon.font="DejaVu Sans Mono:Book:12.0"

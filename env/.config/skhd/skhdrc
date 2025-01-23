@@ -1,5 +1,11 @@
-ctrl - 0x1E : yabai -m space --focus next
-ctrl - 0x21 : yabai -m space --focus prev
+ctrl - 0x1E : bash -c 'cur=$(yabai -m query --spaces --space | jq .index); \
+              max=$(yabai -m query --spaces | jq length); \
+              next=$(( cur == max ? 1 : cur + 1 )); \
+              yabai -m space --focus "$next"'
+ctrl - 0x21 : bash -c 'cur=$(yabai -m query --spaces --space | jq .index); \
+              max=$(yabai -m query --spaces | jq length); \
+              prev=$(( cur == 1 ? max : cur - 1 )); \
+              yabai -m space --focus "$prev"'
 
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2

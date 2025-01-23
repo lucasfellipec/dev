@@ -14,4 +14,4 @@ yabai -m config focus_follows_window off
 yabai -m config focus_follows_mouse off
 yabai -m config window_shadow off
 
-yabai -m config external_bar all:0:40
+yabai -m config external_bar all:0:25
