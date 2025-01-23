@@ -9,9 +9,9 @@
 case "$SENDER" in
   "mouse.entered"|"space_change") # Update on hover and workspace change
     if [ "$SELECTED" = "true" ]; then
-      sketchybar --set $NAME background.color=0xff285577
+      sketchybar --set $NAME background.color=0xff4c7899
     else
-      sketchybar --set $NAME background.color=0xff222222
+      sketchybar --set $NAME background.color=0xff333333
     fi
     ;;
 esac

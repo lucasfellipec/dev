@@ -4,4 +4,4 @@
 # the item invoking this script:
 # https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
 
-sketchybar --set "$NAME" label="||" label.color=0xff666666
+sketchybar --set "$NAME" label="$(sysctl -n vm.loadavg | awk '{print $2}')"
