@@ -4,4 +4,4 @@
 # the item invoking this script:
 # https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
 
-sketchybar --set "$NAME" label="$(df -h / | awk 'NR==2 {print $4}')"
+sketchybar --set "$NAME" label="$(df -h / | awk 'NR==2 {gsub("Gi$", ".0GiB", $4); print $4}')"
