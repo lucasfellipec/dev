@@ -15,7 +15,6 @@ packages=(
     "gcc"
     "gh"
     "go"
-    "httpie"
     "jq"
     "lua"
     "n"
@@ -24,17 +23,13 @@ packages=(
     "tmux"
     "up"
     "wget"
-    "openconnect"
-    "tree"
     "pcre"
     "fzf"
 )
 
 casks=(
     "ghostty"
-    "chatgpt"
     "cleanshot"
-    "discord"
     "figma"
     "firefox"
     "google-drive"
@@ -42,10 +37,8 @@ casks=(
     "notion-calendar"
     "obs"
     "pictogram"
-    "postman"
     "raycast"
     "spotify"
-    "claude"
 )
 
 for package in "${packages[@]}"; do
