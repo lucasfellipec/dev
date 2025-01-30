@@ -22,6 +22,7 @@ packages=(
     "pcre"
     "fzf"
     "zig"
+    "go"
 )
 
 casks=(

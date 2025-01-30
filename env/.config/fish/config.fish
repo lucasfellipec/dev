@@ -28,6 +28,8 @@ for i in (find -L $PERSONAL -type f)
     source $i
 end
 
+bind \cf 'tmux-sessionizer'
+
 export GOPATH="$HOME/.local/go"
 export GIT_EDITOR="$VIM"
 export DEV_ENV_HOME="$HOME/personal/dev"
