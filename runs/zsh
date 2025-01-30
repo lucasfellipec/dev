@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" != "Linux" ]; then
-    echo "you're on an OS that does not support the script"
-    exit 1
-fi
-
-sudo apt install zsh
-hash -r
 sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

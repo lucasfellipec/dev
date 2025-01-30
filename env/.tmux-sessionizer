@@ -6,10 +6,11 @@
 #
 # could be cool!!
 # this means i could create a neovim plugin to shoot commands out to "scratch"
-if [[ "$(pwd)" == $HOME/personal ]]; then
+if test (pwd) = "$HOME/personal"
     clear
     return
-fi
+end
+
 tmux new-window -dn scratch
 vim .
 clear

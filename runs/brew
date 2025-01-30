@@ -25,7 +25,6 @@ packages=(
 )
 
 casks=(
-    "ghostty"
     "cleanshot"
     "firefox"
     "google-drive"

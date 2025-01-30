@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-tmux=$(which tmux)
-alias tmux="$tmux -2"
+set tmux (which tmux)
+alias tmux="tmux -2"

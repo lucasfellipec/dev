@@ -2,9 +2,7 @@ theme = rose-pine
 background = 000000
 
 shell-integration-features = no-cursor,no-sudo,title
-
 cursor-style-blink = false
-cursor-color = e2e1f1
 
 confirm-close-surface = false
 

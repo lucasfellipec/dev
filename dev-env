@@ -8,10 +8,10 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
     XDG_CONFIG_HOME=$HOME/.config
 fi
 
-# if [ -z "$DEV_ENV" ]; then
-#     echo "env var DEV_ENV needs to be present"
-#     exit 1
-# fi
+if [ -z "$DEV_ENV" ]; then
+    echo "env var DEV_ENV needs to be present"
+    exit 1
+fi
 
 if [[ $1 == "--dry" ]]; then
     dry_run="1"
@@ -61,13 +61,14 @@ copy() {
     fi
 }
 
-update_files $DEV_ENV_HOME/env/.config $XDG_CONFIG_HOME
-update_files $DEV_ENV_HOME/env/.local $HOME/.local
+update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
+update_files $DEV_ENV/env/.local $HOME/.local
 
-copy $DEV_ENV_HOME/tmux-sessionizer/tmux-sessionizer $HOME/.local/scripts/tmux-sessionizer
-copy $DEV_ENV_HOME/env/.zsh_profile $HOME/.zsh_profile
-copy $DEV_ENV_HOME/env/.zshrc $HOME/.zshrc
-copy $DEV_ENV_HOME/env/.xprofile $HOME/.xprofile
-copy $DEV_ENV_HOME/env/.tmux-sessionizer $HOME/.tmux-sessionizer
-copy $DEV_ENV_HOME/dev-env $HOME/.local/scripts/dev-env
-copy $DEV_ENV_HOME/env/.gitconfig $HOME/.gitconfig
+copy $DEV_ENV/tmux-sessionizer/tmux-sessionizer $HOME/.local/scripts/tmux-sessionizer
+copy $DEV_ENV/env/.zsh_profile $HOME/.zsh_profile
+copy $DEV_ENV/env/.zshrc $HOME/.zshrc
+copy $DEV_ENV/env/.xprofile $HOME/.xprofile
+copy $DEV_ENV/env/.hushlogin $HOME/.hushlogin
+copy $DEV_ENV/env/.tmux-sessionizer $HOME/.tmux-sessionizer
+copy $DEV_ENV/dev-env $HOME/.local/scripts/dev-env
+copy $DEV_ENV/env/.gitconfig $HOME/.gitconfig
