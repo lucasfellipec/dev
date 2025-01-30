@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/ghostty-org/ghostty.git $HOME/personal/ghostty
+
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+xcode-select --print-path
+
+(
+cd $HOME/personal/ghostty
+zig build -Doptimize=ReleaseFast
+cd macos && xcodebuild
+)

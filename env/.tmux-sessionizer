@@ -1,16 +1,15 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
 
 # i do this to every directory i am in
 # 1 is neovim
 # 2 is where i run commands
 #
-# could be cool!
+# could be cool!!
 # this means i could create a neovim plugin to shoot commands out to "scratch"
-if test (pwd) = "$HOME/personal"
+if [[ "$(pwd)" == $HOME/personal ]]; then
     clear
     return
-end
-
+fi
 tmux new-window -dn scratch
 vim .
 clear

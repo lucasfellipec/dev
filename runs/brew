@@ -8,13 +8,9 @@ fi
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 packages=(
-    "awscli"
-    "boost"
-    "cmake"
     "ffmpeg"
     "gcc"
     "gh"
-    "go"
     "jq"
     "lua"
     "n"
@@ -25,12 +21,12 @@ packages=(
     "wget"
     "pcre"
     "fzf"
+    "zig"
 )
 
 casks=(
     "ghostty"
     "cleanshot"
-    "figma"
     "firefox"
     "google-drive"
     "lunar"
