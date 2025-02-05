@@ -1,0 +1,28 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+VIM="nvim"
+
+PERSONAL="$XDG_CONFIG_HOME/personal"
+DEV_ENV="$HOME/dev"
+for i in `find -L $PERSONAL`; do
+    source $i
+done
+
+## All that sweet sweet fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GOPATH=$HOME/.local/go
+export GIT_EDITOR=$VIM
+export DEV_ENV_HOME="$HOME/personal/dev"
+
+dev_env() {
+}
+
+# Where should I put you?
+bindkey -s ^f "tmux-sessionizer\n"
+
+export PATH="$HOME/.local/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/scripts:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/go/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="$HOME/.local/zig-linux-x86_64-0.13.0:$PATH"

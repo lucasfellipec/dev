@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ "$(uname)" != "Linux" ]; then
+    echo "you're on an OS that does not support the script"
+    exit 1
+fi
+
+# apparently it may be one or the other...
+sudo apt install i3-wm
+sudo apt install i3
