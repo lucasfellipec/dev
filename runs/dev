@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" != "Linux" ]; then
-    echo "you're on an OS that does not support the script"
-    exit 1
-fi
-
 # rust btw
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 

@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" != "Linux" ]; then
-    echo "you're on an OS that does not support the script"
-    exit 1
-fi
-
 ## apt
 ## https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
