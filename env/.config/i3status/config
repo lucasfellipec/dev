@@ -11,10 +11,15 @@ general {
         interval = 5
 }
 
+order += "cpu_temperature 0"
 order += "disk /"
 order += "battery all"
 order += "load"
 order += "tztime local"
+
+cpu_temperature 0 {
+        format = "Tea: %degrees °C"
+}
 
 battery all {
         format = "%status %percentage %remaining"
