@@ -11,13 +11,13 @@ general {
         interval = 5
 }
 
-order += "cpu_temperature 0"
+order += "cpu_temperature 1" # razer blade...
 order += "disk /"
 order += "battery all"
 order += "load"
 order += "tztime local"
 
-cpu_temperature 0 {
+cpu_temperature 1 {
         format = "Tea: %degrees °C"
 }
 
