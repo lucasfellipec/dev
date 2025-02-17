@@ -195,3 +195,7 @@ exec --no-startup-id nm-applet
 bindsym $mod+Shift+period exec systemctl suspend
 
 focus_follows_mouse no
+
+# Screenshot
+bindsym Print exec maim ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym Shift+Print exec maim -s ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png
