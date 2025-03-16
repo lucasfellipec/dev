@@ -4,7 +4,6 @@ A collection of scripts and configurations for setting up a consistent developme
 
 ## Features
 
-- Fish shell configuration with custom themes
 - Automated environment setup script
 - Dry run capability for testing configurations
 
@@ -12,10 +11,10 @@ A collection of scripts and configurations for setting up a consistent developme
 
 ```bash
 # Clone the repository
-git clone https://github.com/lucasfellipec/dev-env.git
+git clone https://github.com/lucasfellipec/dev.git
 
 # Set environment variable
-export DEV_ENV_HOME="/path/to/dev-env"
+export DEV_ENV="~/personal/dev" # /path/to/dev
 
 # Run setup script
 ./dev-env
