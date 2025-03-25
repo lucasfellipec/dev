@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+sudo apt-get install libgl1-mesa-dev libx11-dev libxext-dev libxrandr-dev
 
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 git clone https://github.com/tsoding/boomer.git $HOME/personal/boomer
 
 (
