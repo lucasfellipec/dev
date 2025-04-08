@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
-wget https://github.com/be5invis/Iosevka/releases/download/v3.4.1/pkg-iosevka-3.4.1.zip $HOME/Downloads
+wget -P $HOME/Downloads https://github.com/be5invis/Iosevka/releases/download/v11.0.0/ttf-iosevka-11.0.0.zip
 
 (
 cd $HOME/Downloads
-unzip pkg-iosevka-3.4.1.zip
+unzip ttf-iosevka-11.0.0.zip
 mkdir -p $HOME/.local/share/fonts
-cd ttf
-ls | grep -E "semibold|medium|regular" | xargs -I {} mv {} $HOME/.local/share/fonts
+mv *.ttf $HOME/.local/share/fonts
 )
