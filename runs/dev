@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+sudo pacman -S neovim
+sudo pacman -S ttf-dejavu
+sudo pacman -S go
+sudo pacman -S xorg-xrandr
+sudo pacman -S unzip
+
 # rust btw
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
