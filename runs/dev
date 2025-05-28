@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
-sudo pacman -S unzip
-sudo pacman -S neovim
-sudo pacman -S ttf-dejavu
-sudo pacman -S go
-sudo pacman -S xorg-xrandr
-sudo pacman -S xorg-xinput
-sudo pacman -S xorg-maim
+paru -S --noconfirm --needed gimp tldr go fzf btop bc stylua node npm
+paru -S --noconfirm --needed unzip neovim ttf-dejavu xorg-xrandr xorg-xinput xorg-maim
 
 # rust btw
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
