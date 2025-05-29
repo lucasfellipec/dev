@@ -2,6 +2,7 @@
 
 paru -S --noconfirm --needed gimp tldr go fzf btop bc stylua node npm
 paru -S --noconfirm --needed unzip neovim ttf-dejavu xorg-xrandr xorg-xinput xorg-maim
+go install github.com/air-verse/air@latest
 
 # rust btw
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
