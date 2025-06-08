@@ -1,15 +1,15 @@
 theme = rose-pine
 background = 000000
-# cursor-color = #ffdd33
 
 shell-integration-features = no-cursor,no-sudo,no-title
 gtk-titlebar = false
-# font-family = Iosevka
+background-opacity = 0.85
+confirm-close-surface = false
 
 # remove ligatures?
-font-feature = -calt
-font-feature = -liga
-font-feature = -dlig
+# font-feature = -calt
+# font-feature = -liga
+# font-feature = -dlig
 
 clipboard-paste-protection = false
 
