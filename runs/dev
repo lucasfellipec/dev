@@ -12,13 +12,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install stylua
 
 # luarocks
-pushd /tmp/luarocks-3.11.0
-(
-    wget --output-document /tmp/luarocks.tar.gz https://luarocks.org/releases/luarocks-3.11.0.tar.gz
-    tar zxpf /tmp/luarocks.tar.gz -C /tmp
-    cd
-    ./configure && make && sudo make install
-)
-popd
-
-luarocks install luacheck
+# pushd /tmp/luarocks-3.11.0
+# (
+#     wget --output-document /tmp/luarocks.tar.gz https://luarocks.org/releases/luarocks-3.11.0.tar.gz
+#     tar zxpf /tmp/luarocks.tar.gz -C /tmp
+#     cd
+#     ./configure && make && sudo make install
+# )
+# popd
+#
+# luarocks install luacheck
