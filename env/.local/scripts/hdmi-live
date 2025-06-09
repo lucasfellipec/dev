@@ -2,5 +2,5 @@
 
 xrandr --output DP-1 --primary --mode 2560x1440 --rate 165
 xrandr --output HDMI-1-0 --right-of DP-1 --mode 3840x2160 --rate 60 --rotate right
-# xrandr --output eDP-1 --off
-xrandr --output eDP-1 --left-of DP-1 --mode 2560x1600 --rate 240
+xrandr --output eDP-1 --off
+# xrandr --output eDP-1 --left-of DP-1 --mode 2560x1600 --rate 240
