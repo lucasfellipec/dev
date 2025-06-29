@@ -72,3 +72,4 @@ copy $DEV_ENV/env/.Xresources $HOME/.Xresources
 copy $DEV_ENV/env/.tmux-sessionizer $HOME/.tmux-sessionizer
 copy $DEV_ENV/dev-env $HOME/.local/scripts/dev-env
 copy $DEV_ENV/env/.gitconfig $HOME/.gitconfig
+copy $DEV_ENV/env/rabbithole.zsh-theme $HOME/.oh-my-zsh/themes/rabbithole.zsh-theme
