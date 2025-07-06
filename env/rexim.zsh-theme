@@ -1,1 +1,1 @@
-PROMPT='%m@rexim-B590:%~$ '
+PROMPT='streamer@rexim-B590:%~$ '
