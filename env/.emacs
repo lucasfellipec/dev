@@ -6,7 +6,7 @@
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc-rc.el")
 
-(add-to-list 'default-frame-alist `(font . "Iosevka-20"))
+(add-to-list 'default-frame-alist `(font . "Iosevka-22"))
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
@@ -111,7 +111,6 @@
 
 (require 'compile)
 
-(load-file custom-file)
 
 (with-eval-after-load 'dired
   (define-key dired-mode-map (kbd "j") 'dired-next-line)
@@ -119,3 +118,5 @@
   (define-key dired-mode-map (kbd "-") 'dired-up-directory)
   (define-key dired-mode-map (kbd "n") nil)
   (define-key dired-mode-map (kbd "p") nil))
+
+(load-file custom-file)

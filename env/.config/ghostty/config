@@ -4,8 +4,6 @@ background = 000000
 shell-integration-features = no-cursor,no-sudo,no-title
 gtk-titlebar = false
 confirm-close-surface = false
-font-family = Iosevka
-font-size = 22
 
 # remove ligatures?
 font-feature = -calt

@@ -4,23 +4,5 @@ paru -S --noconfirm --needed gimp tldr go fzf btop bc stylua node npm xsel
 paru -S --noconfirm --needed unzip neovim ttf-dejavu xorg-xrandr xorg-xinput xorg-maim
 paru -S --needed --noconfirm zathura zathura-cb zathura-pdf-mupdf
 paru -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools
-go install github.com/air-verse/air@latest
-
-# rust btw
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# go??? i need to install this
-# lua btw
-cargo install stylua
-
-# luarocks
-pushd /tmp/luarocks-3.11.0
-(
-    wget --output-document /tmp/luarocks.tar.gz https://luarocks.org/releases/luarocks-3.11.0.tar.gz
-    tar zxpf /tmp/luarocks.tar.gz -C /tmp
-    cd
-    ./configure && make && sudo make install
-)
-popd
-
-luarocks install luacheck
+paru -S ffmpeg aalib ascii-image-converter-bin --noconfirm
+# go install github.com/air-verse/air@latest
