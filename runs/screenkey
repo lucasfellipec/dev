@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-# dependency
-sudo pacman -S slop
-
-sudo pacman -S screenkey
