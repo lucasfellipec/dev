@@ -7,7 +7,7 @@ makepkg -si
 hash -r
 
 paru -S --noconfirm --needed tmux gimp tldr go fzf btop bc stylua node npm xsel
-paru -S --noconfirm --needed unzip neovim ttf-dejavu xorg-xrandr xorg-xinput xorg-maim
+paru -S --noconfirm --needed unzip neovim xorg-xrandr xorg-xinput xorg-maim
 paru -S --needed --noconfirm zathura zathura-cb zathura-pdf-mupdf
 paru -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools
 paru -S --noconfirm --needed slop rofi obs-studio
