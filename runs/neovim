@@ -8,5 +8,6 @@ git fetch
 git checkout harpoon2
 
 git clone https://github.com/nvim-lua/plenary.nvim.git $HOME/personal/plenary.nvim
+git clone https://github.com/lucasfellipec/gruber-darker $HOME/personal/gruber-darker
 
 sudo luarocks install luacheck

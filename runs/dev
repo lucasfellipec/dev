@@ -8,9 +8,9 @@ hash -r
 
 paru -S --noconfirm --needed tmux gimp tldr go fzf btop bc stylua node npm xsel
 paru -S --noconfirm --needed unzip neovim xorg-xrandr xorg-xinput xorg-maim
-paru -S --needed --noconfirm zathura zathura-cb zathura-pdf-mupdf
+paru -S --noconfirm --needed zathura zathura-cb zathura-pdf-mupdf
 paru -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools
 paru -S --noconfirm --needed slop rofi obs-studio
-paru -S ffmpeg screenkey aalib ascii-image-converter-bin --noconfirm
+paru -S --noconfirm --needed ffmpeg screenkey aalib ascii-image-converter-bin
 
 # go install github.com/air-verse/air@latest
