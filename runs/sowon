@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+paru -S --noconfirm --needed sdl
+
+git clone https://github.com/tsoding/sowon.git $HOME/personal/sowon
+cd $HOME/personal/sowon
+make
