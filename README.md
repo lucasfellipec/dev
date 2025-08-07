@@ -6,3 +6,4 @@
 - Privacy Badger
 - Dark Reader
 - Return YouTube Dislike
+- Mouse Tooltip Translator
