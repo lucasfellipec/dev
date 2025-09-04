@@ -3,9 +3,9 @@
 sudo pacman -S nodejs npm
 npm config set prefix ~/.local/npm
 
-hash -r
-npm i -g n
-n lts
+# hash -r
+# npm i -g n
+# n lts
 
 # curl -fsSL https://deno.land/install.sh | sh
 # curl -fsSL https://bun.sh/install | bash

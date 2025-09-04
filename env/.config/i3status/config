@@ -34,7 +34,7 @@ cpu_temperature 1 {
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "Fairy Dust: %status %percentage %remaining"
 }
 
 tztime local {

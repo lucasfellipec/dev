@@ -1,1 +1,5 @@
 @theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+configuration {
+    font: "Iosevka 16";
+}

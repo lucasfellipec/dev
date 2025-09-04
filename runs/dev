@@ -6,7 +6,7 @@ makepkg -si
 
 hash -r
 
-paru -S --noconfirm --needed tmux gimp tldr go fzf btop bc stylua node npm xsel downgrade man-db
+paru -S --noconfirm --needed tmux gimp tldr go fzf btop bc stylua node npm xsel downgrade man-db bind emacs nmap
 paru -S --noconfirm --needed unzip neovim xorg-xrandr xorg-xinput xorg-maim dirb
 paru -S --noconfirm --needed zathura zathura-cb zathura-pdf-mupdf
 paru -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools

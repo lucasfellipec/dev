@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-setxkbmap -option caps:ctrl_modifier
-setxkbmap -layout us,br -option "grp:win_space_toggle"
+# setxkbmap -option caps:ctrl_modifier
+setxkbmap -layout us,br -option grp:shifts_toggle,ctrl:nocaps,compose:ralt
+xmodmap -e 'keycode 102 = Super_L'

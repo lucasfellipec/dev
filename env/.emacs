@@ -1,7 +1,7 @@
 (setq custom-file "~/.emacs.custom.el")
 (load custom-file)
 
-(add-to-list 'default-frame-alist '(font . "Iosevka-20"))
+(add-to-list 'default-frame-alist '(font . "Iosevka 20"))
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -32,3 +32,9 @@
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;;; c-mode
+(setq-default c-basic-offset 4
+              c-default-style '((java-mode . "java")
+                                (awk-mode . "awk")
+                                (other . "bsd")))
