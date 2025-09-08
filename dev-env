@@ -74,4 +74,3 @@ copy $DEV_ENV/dev-env $HOME/.local/scripts/dev-env
 copy $DEV_ENV/env/.gitconfig $HOME/.gitconfig
 copy $DEV_ENV/env/.emacs $HOME/.emacs
 copy $DEV_ENV/env/.emacs.custom.el $HOME/.emacs.custom.el
-copy $DEV_ENV/env/rexim.zsh-theme $HOME/.oh-my-zsh/themes/rexim.zsh-theme
