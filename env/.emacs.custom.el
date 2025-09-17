@@ -9,7 +9,14 @@
    '("e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7"
      default))
  '(display-line-numbers-type 'relative)
- '(package-selected-packages '(gruber-darker-theme ido-completing-read+ smex)))
+ '(package-selected-packages
+   '(cmake-mode company devdocs dockerfile-mode gnuplot go-mode
+                gruber-darker-theme ido-completing-read+ lua-mode
+                markdown-mode nginx-mode nim-mode paredit rust-mode
+                smex toml-mode typescript-mode yaml-mode))
+ '(whitespace-style
+   '(face tabs spaces trailing space-before-tab newline newline-mark
+          indentation empty space-after-tab space-mark tab-mark)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
