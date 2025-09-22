@@ -1,5 +1,5 @@
 (setq custom-file "~/.emacs.custom.el")
-(load custom-file)
+(load-file custom-file)
 
 (add-to-list 'default-frame-alist '(font . "Iosevka 20"))
 
@@ -16,8 +16,6 @@
               tab-width 4
               indent-tabs-mode nil
               compilation-scroll-output t)
-
-; (rc/require-theme 'gruber-darker)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -38,9 +36,25 @@
   (dolist (package packages)
     (rc/require-one-package package)))
 
+(defun rc/require-theme (theme)
+  (let ((theme-package (->> theme
+                            (symbol-name)
+                            (funcall (-flip #'concat) "-theme")
+                            (intern))))
+    (rc/require theme-package)
+    (load-theme theme t)))
+
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+
+(rc/require 'dash)
+(require 'dash)
+
+(rc/require 'dash-functional)
+(require 'dash-functional)
+
+(rc/require-theme 'gruber-darker)
 
 ;;; ido
 (rc/require 'smex 'ido-completing-read+)
