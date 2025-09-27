@@ -7,6 +7,7 @@
 - Dark Reader
 - Return YouTube Dislike
 - Mouse Tooltip Translator
+- AI Subtitles & Immersive Translate - Trancy
 
 ## Enabling Firefox CSS
 

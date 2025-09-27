@@ -54,7 +54,7 @@
 (rc/require 'dash-functional)
 (require 'dash-functional)
 
-(rc/require-theme 'gruber-darker)
+; (rc/require-theme 'gruber-darker)
 
 ;;; ido
 (rc/require 'smex 'ido-completing-read+)
@@ -109,6 +109,16 @@
 
 (require 'ansi-color)
 
+;;; helm
+(rc/require 'helm 'helm-ls-git)
+
+(setq helm-ff-transformer-show-only-basename nil)
+
+(global-set-key (kbd "C-c h t") 'helm-cmd-t)
+(global-set-key (kbd "C-c h g l") 'helm-ls-git-ls)
+(global-set-key (kbd "C-c h f") 'helm-find)
+(global-set-key (kbd "C-c h r") 'helm-recentf)
+
 (defun rc/colorize-compilation-buffer ()
   (read-only-mode 'toggle)
   (ansi-color-apply-on-region compilation-filter-start (point))
@@ -155,6 +165,11 @@
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
+
+;;; Move Text
+(rc/require 'move-text)
+(global-set-key (kbd "M-p") 'move-text-up)
+(global-set-key (kbd "M-n") 'move-text-down)
 
 ;;; yasnippet
 (rc/require 'yasnippet)
@@ -212,3 +227,14 @@
      nil
      t)
     (goto-line saved-line-number)))
+
+(rc/require 'cl-lib)
+(rc/require 'magit)
+
+(setq magit-auto-revert-mode nil)
+
+(global-set-key (kbd "C-c m s") 'magit-status)
+(global-set-key (kbd "C-c m l") 'magit-log)
+
+(setq explicit-shell-file-name "/bin/bash")
+(setq shell-file-name "bash")
