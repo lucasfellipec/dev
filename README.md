@@ -8,6 +8,7 @@
 - Return YouTube Dislike
 - Mouse Tooltip Translator
 - AI Subtitles & Immersive Translate - Trancy
+- Control Panel for Twitter
 
 ## Enabling Firefox CSS
 
