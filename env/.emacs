@@ -1,6 +1,8 @@
 (setq custom-file "~/.emacs.custom.el")
 (load-file custom-file)
 
+(add-to-list 'load-path "~/.emacs.local/")
+
 (add-to-list 'default-frame-alist '(font . "Iosevka 20"))
 
 (tool-bar-mode 0)
@@ -73,6 +75,10 @@
               c-default-style '((java-mode . "java")
                                 (awk-mode . "awk")
                                 (other . "bsd")))
+
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+(add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode))
 
 ;;; Whitespace mode
 (defun rc/set-up-whitespace-handling ()
@@ -217,6 +223,11 @@
 (add-to-list 'auto-mode-alist '("\\.xsd\\'" . nxml-mode))
 (add-to-list 'auto-mode-alist '("\\.ant\\'" . nxml-mode))
 
+(add-hook 'simpc-mode-hook
+          (lambda ()
+            (interactive)
+            (setq-local fill-paragraph-function 'astyle-buffer)))
+
 (defun astyle-buffer (&optional justify)
   (interactive)
   (let ((saved-line-number (line-number-at-pos)))
@@ -238,3 +249,6 @@
 
 (setq explicit-shell-file-name "/bin/bash")
 (setq shell-file-name "bash")
+
+(setq split-height-threshold 0)
+(setq split-width-threshold nil)
