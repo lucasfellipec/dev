@@ -9,6 +9,10 @@
 - Mouse Tooltip Translator
 - AI Subtitles & Immersive Translate - Trancy
 - Control Panel for Twitter
+- Auto Tab Discard
+
+## Logitech G HUB
+https://github.com/pwr-Solaar/Solaar
 
 ## Enabling Firefox CSS
 
