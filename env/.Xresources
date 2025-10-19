@@ -1,10 +1,10 @@
 Xcursor.size: 12
 
-URxvt.termName: rxvt
-URxvt*depth: 32
-URxvt.transparent: false
-URxvt.font: xft:Iosevka Term:size=23
-URxvt.scrollBar: false
+URxvt.termName:     rxvt
+URxvt*depth:        32
+URxvt.transparent:  false
+URxvt.font:         xft:Iosevka Term:size=19
+URxvt.scrollBar:    false
 
 URxvt.keysym.C-minus:  resize-font:smaller
 URxvt.keysym.C-equal:  resize-font:bigger
@@ -29,3 +29,7 @@ URxvt*color12:    #729FCF
 URxvt*color13:    #AD7FA8
 URxvt*color14:    #fcaf3e
 URxvt*color15:    #EEEEEC
+
+URxvt.perl-ext-common: resize-font,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1

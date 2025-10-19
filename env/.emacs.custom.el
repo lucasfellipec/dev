@@ -14,11 +14,11 @@
                 dockerfile-mode gnuplot go-mode gruber-darker-theme
                 helm-ls-git ido-completing-read+ lua-mode magit
                 markdown-mode move-text multiple-cursors nginx-mode
-                nim-mode paredit rust-mode smex toml-mode
+                nim-mode org-cliplink paredit rust-mode smex toml-mode
                 typescript-mode yasnippet))
  '(whitespace-style
-   '(face tabs spaces trailing space-before-tab newline newline-mark
-          indentation empty space-after-tab space-mark tab-mark)))
+   '(face tabs spaces trailing space-before-tab newline indentation empty
+          space-after-tab space-mark tab-mark)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
