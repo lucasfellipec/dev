@@ -14,6 +14,12 @@
 ## Logitech G HUB
 https://github.com/pwr-Solaar/Solaar
 
+## Telegram Media Downloader
+https://github.com/Dineshkarthik/telegram_media_downloader.git
+
+## Font
+Iosevka 33.2.7
+
 ## Enabling Firefox CSS
 
 Open `about:config` and set the following:

@@ -3,7 +3,7 @@
 
 (add-to-list 'load-path "~/.emacs.local/")
 
-(add-to-list 'default-frame-alist '(font . "Iosevka 20"))
+(add-to-list 'default-frame-alist '(font . "Iosevka 19"))
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)

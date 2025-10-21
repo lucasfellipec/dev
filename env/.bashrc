@@ -9,4 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
+
 [ -f ~/.bash_profile ] && source ~/.bash_profile
