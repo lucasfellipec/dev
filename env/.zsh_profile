@@ -1,3 +1,5 @@
+alias rm="rm --preserve-root"
+
 export XDG_CONFIG_HOME="$HOME/.config"
 VIM="nvim"
 
@@ -15,6 +17,7 @@ export GIT_EDITOR=$VIM
 export DEV_ENV_HOME="$HOME/personal/dev"
 export DENO_INSTALL="$HOME/.deno"
 export N_PREFIX="$HOME/.local/n"
+export KUBE_EDITOR=$VIM
 
 dev_env() {
 }

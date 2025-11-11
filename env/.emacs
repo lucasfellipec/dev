@@ -1,26 +1,10 @@
 (setq custom-file "~/.emacs.custom.el")
-(load-file custom-file)
 
 (add-to-list 'load-path "~/.emacs.local/")
 
-(add-to-list 'default-frame-alist '(font . "Iosevka 19"))
-
-(tool-bar-mode 0)
-(menu-bar-mode 0)
-(scroll-bar-mode 0)
-(column-number-mode 1)
-(show-paren-mode 1)
-(global-display-line-numbers-mode 1)
-(global-whitespace-mode 1)
-
-(setq-default inhibit-splash-screen t
-              make-backup-files nil
-              tab-width 4
-              indent-tabs-mode nil
-              compilation-scroll-output t)
-
-(setq make-backup-files nil)
-(setq auto-save-default nil)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
 
 (defvar rc/package-contents-refreshed nil)
 
@@ -46,15 +30,30 @@
     (rc/require theme-package)
     (load-theme theme t)))
 
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
-
 (rc/require 'dash)
 (require 'dash)
 
 (rc/require 'dash-functional)
 (require 'dash-functional)
+
+(add-to-list 'default-frame-alist '(font . "Iosevka 16"))
+
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+(column-number-mode 1)
+(show-paren-mode 1)
+(global-display-line-numbers-mode 1)
+(global-whitespace-mode 1)
+
+(setq-default inhibit-splash-screen t
+              make-backup-files nil
+              tab-width 4
+              indent-tabs-mode nil
+              compilation-scroll-output t)
+
+(setq make-backup-files nil)
+(setq auto-save-default nil)
 
 ; (rc/require-theme 'gruber-darker)
 
@@ -324,3 +323,28 @@
         ("K" "Cliplink capture task" entry (file "~/Documents/Agenda/Tasks.org")
          "* TODO %(org-cliplink-capture) \n  SCHEDULED: %t\n" :empty-lines 1)))
 (define-key global-map "\C-cc" 'org-capture)
+
+;;; ellama
+
+(use-package ellama
+  :ensure t
+  :bind ("C-c e" . ellama)
+  ;; send last message in chat buffer with C-c C-c
+  :hook (org-ctrl-c-ctrl-c-final . ellama-chat-send-last-message)
+  :init (setopt ellama-auto-scroll t)
+  (setopt ellama-language "Portuguese Brazil")
+  (require 'llm-ollama)
+  (setopt ellama-translation-provider
+          (make-llm-ollama
+           :chat-model "aya"
+           :embedding-model "nomic-embed-text"))
+  :config
+  ;; show ellama context in header line in all buffers
+  (ellama-context-header-line-global-mode +1)
+  ;; show ellama session id in header line in all buffers
+  (ellama-session-header-line-global-mode +1))
+
+(ellama-session-header-line-global-mode -1)
+(ellama-context-header-line-global-mode -1)
+
+(load-file custom-file)
