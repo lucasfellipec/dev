@@ -53,6 +53,9 @@ floating_modifier $mod
 # bindsym $mod+Return exec "/usr/bin/urxvt"
 bindsym $mod+Return exec st
 
+# scrot
+bindsym --release $mod+s exec "scrot -s"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -99,7 +102,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -204,11 +207,7 @@ bindsym $mod+Shift+period exec systemctl suspend
 focus_follows_mouse no
 
 # Boomer application
-bindsym $mod+b exec "~/personal/boomer/boomer"
-
-# Screenshot
-bindsym Print exec maim ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png
-bindsym Shift+Print exec maim -s ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym $mod+b exec "~/Programming/boomer/boomer"
 
 # Move workspace
 bindsym $mod+Shift+Right move workspace to output right

@@ -1,10 +1,11 @@
 (setq custom-file "~/.emacs.custom.el")
 
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.local/")
 
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
 
 (defvar rc/package-contents-refreshed nil)
 
@@ -68,6 +69,7 @@
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(global-set-key (kbd "C-x t") 'window-swap-states)
 
 ;;; c-mode
 (setq-default c-basic-offset 4
@@ -249,9 +251,6 @@
 
 (global-set-key (kbd "C-c m s") 'magit-status)
 (global-set-key (kbd "C-c m l") 'magit-log)
-
-(setq explicit-shell-file-name "/bin/bash")
-(setq shell-file-name "bash")
 
 (setq split-height-threshold 0)
 (setq split-width-threshold nil)

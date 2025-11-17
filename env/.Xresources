@@ -1,9 +1,9 @@
-Xcursor.size: 12
+Xcursor.size: 10
 
 URxvt.termName:     rxvt
 URxvt*depth:        32
 URxvt.transparent:  false
-URxvt.font:         xft:Iosevka Term:size=21
+URxvt.font:         xft:Iosevka Term:size=20
 URxvt.scrollBar:    false
 
 URxvt.keysym.C-minus:  resize-font:smaller

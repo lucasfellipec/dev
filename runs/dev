@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-git clone https://aur.archlinux.org/paru.git $HOME/personal/paru
-cd $HOME/personal/paru
+git clone https://aur.archlinux.org/paru.git $HOME/Programming/paru
+cd $HOME/Programming/paru
 makepkg -si
 
 hash -r

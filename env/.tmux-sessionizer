@@ -5,8 +5,8 @@
 # 2 is where i run commands
 #
 # could be cool!!
-# this means i could create a neovim plugin to shoot commands out to "scartch"
-if [[ "$(pwd)" == $HOME/personal ]]; then
+# this means i could create a neovim plugin to shoot commands out to "scratch"
+if [[ "$(pwd)" == $HOME/Programming ]]; then
     clear
     return
 fi

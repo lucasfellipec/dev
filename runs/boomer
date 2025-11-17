@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-paru -S --noconfirm --needed nimble-git
+# paru -S --noconfirm --needed nimble-git
 
-git clone https://github.com/tsoding/boomer.git $HOME/personal/boomer
-cd $HOME/personal/boomer
-nimble build
+git clone https://github.com/tsoding/boomer.git $HOME/Programming/boomer
+cd $HOME/Programming/boomer
+# nimble build

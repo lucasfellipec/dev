@@ -2,5 +2,5 @@
 
 sudo pacman -S git ripgrep pavucontrol xclip jq shutter
 
-git clone https://github.com/junegunn/fzf.git $HOME/personal/fzf
-$HOME/personal/fzf/install
+git clone https://github.com/junegunn/fzf.git $HOME/Programming/fzf
+$HOME/Programming/fzf/install
