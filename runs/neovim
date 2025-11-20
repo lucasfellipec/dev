@@ -2,12 +2,11 @@
 
 sudo pacman -S --noconfirm neovim lua51 luarocks
 
-git clone https://github.com/ThePrimeagen/harpoon.git $HOME/personal/harpoon
-cd $HOME/personal/harpoon
+git clone https://github.com/ThePrimeagen/harpoon.git $HOME/Programming/harpoon
+cd $HOME/Programming/harpoon
 git fetch
 git checkout harpoon2
 
-git clone https://github.com/nvim-lua/plenary.nvim.git $HOME/personal/plenary.nvim
-git clone https://github.com/lucasfellipec/gruber-darker $HOME/personal/gruber-darker
+git clone https://github.com/nvim-lua/plenary.nvim.git $HOME/Programming/plenary.nvim
 
 sudo luarocks install luacheck

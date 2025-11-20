@@ -7,10 +7,8 @@ makepkg -si
 hash -r
 
 paru -S --noconfirm --needed tmux gimp fzf bc stylua xsel downgrade bind inetutils nmap
-paru -S --noconfirm --needed unzip xorg-xrandr xorg-xinput # xorg-maim
+paru -S --noconfirm --needed unzip xorg-xrandr xorg-xinput
 paru -S --noconfirm --needed zathura zathura-cb zathura-pdf-mupdf
 paru -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools
-paru -S --noconfirm --needed rofi obs-studio # slop
-paru -S --noconfirm --needed ffmpeg screenkey fuse3 
-
-# go install github.com/air-verse/air@latest
+paru -S --noconfirm --needed rofi obs-studio
+paru -S --noconfirm --needed ffmpeg screenkey fuse3

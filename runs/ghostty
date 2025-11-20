@@ -6,10 +6,10 @@ wget https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz -O /tmp/
 tar -xvf /tmp/zig.tar.xz -C $HOME/.local
 export PATH="$HOME/.local/zig-linux-x86_64-0.13.0:$PATH"
 
-git clone https://github.com/ghostty-org/ghostty.git $HOME/personal/ghostty
+git clone https://github.com/ghostty-org/ghostty.git $HOME/Programming/ghostty
 
 (
-cd $HOME/personal/ghostty
+cd $HOME/Programming/ghostty
 git checkout v1.0.0
 zig build -p $HOME/.local -Doptimize=ReleaseFast
 )

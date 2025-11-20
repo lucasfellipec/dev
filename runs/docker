@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-## apt
 ## https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 sudo pacman -S docker docker-compose
