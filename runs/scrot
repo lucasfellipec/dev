@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/dreamer/scrot.git $HOME/Programming/scrot
+cd $HOME/Programming/scrot
+
+paru -S --needed --noconfirm meson
+
+meson setup build
+ninja -C build
+ninja -C build install
