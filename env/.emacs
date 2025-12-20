@@ -37,7 +37,7 @@
 (rc/require 'dash-functional)
 (require 'dash-functional)
 
-(add-to-list 'default-frame-alist '(font . "Iosevka 16"))
+(add-to-list 'default-frame-alist '(font . "Iosevka 20"))
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -335,7 +335,7 @@
   (require 'llm-ollama)
   (setopt ellama-translation-provider
           (make-llm-ollama
-           :chat-model "aya"
+           :chat-model "gemma3"
            :embedding-model "nomic-embed-text"))
   :config
   ;; show ellama context in header line in all buffers
